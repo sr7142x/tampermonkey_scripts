@@ -3,14 +3,13 @@
 // @namespace   andbrant
 // @match        http://*/*
 // @match        https://*/*
-// @grant       none
 // @run-at document-end // document-start // document-idle
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_registerMenuCommand
 // @grant        GM_setClipboard
 // @noframes
-// @version     0.1
+// @version     0.2
 // @author      -
 // @require      https://raw.githubusercontent.com/yeltnar/tampermonkey_scripts/master/toast.notauser.js
 // @dont-require     https://github.com/yeltnar/tampermonkey_scripts/raw/master/timeoutPromise.notauser.js
@@ -46,3 +45,4 @@ function getOutputDomain(){
   }
   return output_domain;
 }
+
