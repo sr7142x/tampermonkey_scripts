@@ -56,6 +56,9 @@ const ntfyApi = (()=>{
   
     function getGeneric({key_name,allow_random=false}){
       let value = GM_getValue(key_name);
+      if(['drewtest123'].includes(value)){
+        value=undefined;
+      }
       if (value === undefined || value === null) {
           prompt_value = `enter ${key_name} value`
           prompt_value = allow_random===true ? `${value} or cancel for a random value` : value;
